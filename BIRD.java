@@ -1,9 +1,9 @@
 
 /**
- * Beschreiben Sie hier die Klasse BIRD.
+ * Darstellung des Vogels
  * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
+ * Marco,Kian,Liv
+ * 05.05.21
  */
 public class BIRD
 {
