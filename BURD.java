@@ -1,11 +1,11 @@
 
 /**
- * Darstellung des Vogels
+ * Beschreiben Sie hier die Klasse BURD.
  * 
- * Marco,Kian,Liv
- * 05.05.21
+ * @author (Ihr Name) 
+ * @version (eine Versionsnummer oder ein Datum)
  */
-public class BIRD
+public class BURD
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
     private int x;
@@ -13,7 +13,7 @@ public class BIRD
     /**
      * Konstruktor für Objekte der Klasse BIRD
      */
-    public BIRD()
+    public BURD()
     {
         // Instanzvariable initialisieren
         x = 0;
