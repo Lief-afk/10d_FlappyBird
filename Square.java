@@ -84,7 +84,8 @@ public class Square
     
     private void setzeAufPosition(int xPos,int yPos)
     {
-        
+        this.xPos = xPos;
+        this.yPos = yPos;
     }
 }
 
