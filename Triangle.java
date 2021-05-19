@@ -65,8 +65,8 @@ public class Triangle
     {
         if(isVisible) {
             Canvas canvas = Canvas.getCanvas();
-            int[] xpoints = { xPos, xPos + (width/2), xPos - (width/2) };
-            int[] ypoints = { yPos, yPos + height, yPos + height };
+            int[] xpoints = { xPos - (height/2), xPos + width, xPos + width };
+            int[] ypoints = { yPos, yPos - height, yPos - height };
             canvas.draw(this, color, new Polygon(xpoints, ypoints, 3));
             canvas.wait(10);
         }
