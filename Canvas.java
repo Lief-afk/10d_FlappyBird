@@ -28,7 +28,7 @@ public class Canvas
     public static Canvas getCanvas()
     {
         if(canvasSingleton == null) {
-            canvasSingleton = new Canvas("Flappy Bird", 600, 400, 
+            canvasSingleton = new Canvas("Flappy Bird", 1920, 1080, 
                                          Color.white);
         }
         canvasSingleton.setVisible(true);
