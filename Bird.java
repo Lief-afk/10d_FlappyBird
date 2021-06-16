@@ -16,9 +16,10 @@ public class Bird
         rumpf = new Ellipse(40,35,60,60,"red");
         schnabel = new Triangle(12,12,70,70,"yellow");
         flügel = new Ellipse(13,18,80,80,"white");
-        
-        
-        
-       
+    }
+    
+    public void draw()
+    {
+        draw();
     }
 }
