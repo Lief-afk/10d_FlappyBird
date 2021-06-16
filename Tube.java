@@ -27,4 +27,10 @@ public class Tube
        rechteck1.draw();
        rechteck2.draw();
    }
+   
+   
+   public void bewegeNachLinks()
+   {
+       
+   }
 }
