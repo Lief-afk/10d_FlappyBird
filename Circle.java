@@ -70,7 +70,7 @@ public class Circle
     /**
      * Draw the circle with current specifications on screen.
      */
-    private void draw()
+    public void draw()
     {
         if(isVisible) {
             Canvas canvas = Canvas.getCanvas();

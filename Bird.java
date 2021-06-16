@@ -23,5 +23,6 @@ public class Bird
         flügel.draw();
         rumpf.draw();
         schnabel.draw();
+        auge.draw();
     }
 }
