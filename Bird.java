@@ -12,16 +12,16 @@ public class Bird
     Ellipse rumpf;
     public Bird()
     {
-        auge = new Circle(10,50,50,"black");
-        rumpf = new Ellipse(40,35,60,60,"red");
-        schnabel = new Triangle(12,12,70,70,"yellow");
-        flügel = new Ellipse(13,18,80,80,"white");
+        rumpf = new Ellipse(80,70,50,505,"red");
+        auge = new Circle(20,95,520,"black");
+        flügel = new Ellipse(43,26,43,528,"white");
+        schnabel = new Triangle(24,24,150,540,"yellow");
     }
     
     public void draw()
     {
-        flügel.draw();
         rumpf.draw();
+        flügel.draw();
         schnabel.draw();
         auge.draw();
     }
