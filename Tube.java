@@ -24,6 +24,7 @@ public class Tube
    }
    public void draw()
    {
-    
-    }
+       rechteck1.draw();
+       rechteck2.draw();
+   }
 }
