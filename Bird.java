@@ -25,4 +25,12 @@ public class Bird
         schnabel.draw();
         auge.draw();
     }
+    
+    public void move(int bewegung)
+    {
+        rumpf.moveVertical(3);
+        auge.moveVertical(3);
+        flügel.moveVertical(3);
+        schnabel.moveVertical(3);
+    }
 }
