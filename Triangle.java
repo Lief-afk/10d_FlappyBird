@@ -27,6 +27,7 @@ public class Triangle
         this.xPos = xPos;
         this.yPos = yPos;
         this.color = color;
+        isVisible = true;
     }
 
     /**
@@ -61,7 +62,7 @@ public class Triangle
     /*
      * Draw the triangle with current specifications on screen.
      */
-        private void draw()
+        public void draw()
     {
         if(isVisible) {
             Canvas canvas = Canvas.getCanvas();
@@ -75,7 +76,7 @@ public class Triangle
     /*
      * Erase the triangle on screen.
      */
-    private void erase()
+    public void erase()
     {
         if(isVisible) {
             Canvas canvas = Canvas.getCanvas();

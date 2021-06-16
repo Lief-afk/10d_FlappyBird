@@ -27,6 +27,7 @@ public class Ellipse
         this.xPos = xPos;
         this.yPos = yPos;
         this.color = color;
+        isVisible = true;
     }
 
     /**
@@ -61,7 +62,7 @@ public class Ellipse
     /*
      * Draw the circle with current specifications on screen.
      */
-    private void draw()
+    public void draw()
     {
         if(isVisible) {
             Canvas canvas = Canvas.getCanvas();
@@ -74,7 +75,7 @@ public class Ellipse
     /*
      * Erase the circle on screen.
      */
-    private void erase()
+    public void erase()
     {
         if(isVisible) {
             Canvas canvas = Canvas.getCanvas();

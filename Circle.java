@@ -25,6 +25,7 @@ public class Circle
         this.xPos = xPos;
         this.yPos = yPos;
         this.color = color;
+        isVisible = true;
     }
     
     /**
@@ -69,7 +70,7 @@ public class Circle
     /**
      * Draw the circle with current specifications on screen.
      */
-    private void draw()
+    public void draw()
     {
         if(isVisible) {
             Canvas canvas = Canvas.getCanvas();
@@ -79,7 +80,7 @@ public class Circle
         }
     }
     
-    private void erase()
+    public void erase()
     {
         if(isVisible) {
             Canvas canvas = Canvas.getCanvas();
