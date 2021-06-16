@@ -76,7 +76,7 @@ public class Triangle
     /*
      * Erase the triangle on screen.
      */
-    private void erase()
+    public void erase()
     {
         if(isVisible) {
             Canvas canvas = Canvas.getCanvas();

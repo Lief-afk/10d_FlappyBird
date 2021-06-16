@@ -80,7 +80,7 @@ public class Circle
         }
     }
     
-    private void erase()
+    public void erase()
     {
         if(isVisible) {
             Canvas canvas = Canvas.getCanvas();
