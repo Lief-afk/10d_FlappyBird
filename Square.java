@@ -27,6 +27,7 @@ public class Square
         this.xPos = xPos;
         this.yPos = yPos;
         this.color = color;
+        isVisible = true;
     }
 
     /**

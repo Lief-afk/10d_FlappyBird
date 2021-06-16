@@ -20,6 +20,8 @@ public class Bird
     
     public void draw()
     {
-        draw();
+        flügel.draw();
+        rumpf.draw();
+        schnabel.draw();
     }
 }
