@@ -10,6 +10,7 @@ public class Spiel
     Bird bird;
     Tube tube1;
     Tube tube2;
+    Tube tube3;
     /**
      * Konstruktor für Objekte der Klasse Spiel
      */
@@ -21,7 +22,11 @@ public class Spiel
         tube1.draw();
         tube2 = new Tube();
         tube2.draw();
+        tube3 = new Tube();
+        tube3.draw();
+        
         bird.move(50);
+        
     }    
 }
 
