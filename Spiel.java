@@ -8,6 +8,7 @@
 public class Spiel
 {
     Bird bird;
+    
     /**
      * Konstruktor für Objekte der Klasse Spiel
      */

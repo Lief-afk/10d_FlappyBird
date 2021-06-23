@@ -7,15 +7,15 @@
  */
 public class Tube
 {
-   Square rechteck1;
-   Square rechteck2;
+   Square tube1;
+   Square tube2;
    int xPosition;
    int yPosition;
    
    Tube()
    {
-       rechteck1 = new Square(50,450,300,0,"green");
-       rechteck2 = new Square(50,450,50,0,"green");
+       tube1 = new Square(50,450,300,0,"green");
+       tube2 = new Square(50,450,50,0,"green");
        xPosition = 0;
        yPosition = 0;
        
@@ -24,8 +24,8 @@ public class Tube
    }
    public void draw()
    {
-       rechteck1.draw();
-       rechteck2.draw();
+       tube1.draw();
+       tube2.draw();
    }
    
    
