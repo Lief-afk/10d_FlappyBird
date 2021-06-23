@@ -28,9 +28,9 @@ public class Bird
     
     public void move(int bewegung)
     {
-        rumpf.moveVertical(3);
-        auge.moveVertical(3);
-        flügel.moveVertical(3);
-        schnabel.moveVertical(3);
+        rumpf.moveVertical(bewegung);
+        auge.moveVertical(bewegung);
+        flügel.moveVertical(bewegung);
+        schnabel.moveVertical(bewegung);
     }
 }
