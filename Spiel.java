@@ -21,8 +21,7 @@ public class Spiel
         tube1.draw();
         tube2 = new Tube();
         tube2.draw();
-        bird.move(100);
-    }
-
+        bird.move(50);
+    }    
 }
 
