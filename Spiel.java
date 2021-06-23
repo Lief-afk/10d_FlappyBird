@@ -8,7 +8,8 @@
 public class Spiel
 {
     Bird bird;
-    
+    Tube tube1;
+    Tube tube2;
     /**
      * Konstruktor für Objekte der Klasse Spiel
      */
@@ -16,6 +17,11 @@ public class Spiel
     {
         bird = new Bird();
         bird.draw();
+        tube1 = new Tube();
+        tube1.draw();
+        tube2 = new Tube();
+        tube2.draw();
+        
     }
 
 }
