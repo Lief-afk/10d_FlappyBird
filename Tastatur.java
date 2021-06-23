@@ -1,27 +1,27 @@
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
-/**
- * Erstellen einer Tastatur zur wiedergabe der gedrückten Taste
- * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
- */
+import javax.swing. *;
 public class Tastatur
 {
-
+    Tastatur t;
     /**
      * Konstruktor für Objekte der Klasse Tastatur
      */
     public Tastatur()
     {
-        
-    }
+        t = new Tastatur();
+        t.addKeyListener (new KeyAdapter()
+        {
+        public void KeyPressed(KeyEvent e)
+        {
+            TasteGedrueckt((char)e.getKeyCode());
+        }
     
-    void Taste(char  welche)
+       });
+    }
+    void TasteGedrueckt()
     {
-        System. out. println ("Zeichen. " + welche);
+        System.out.pirntIn("Zeichen:" + key);
     }
-    
-    }
-
+}
