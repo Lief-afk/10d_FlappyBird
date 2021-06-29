@@ -15,12 +15,11 @@ public class Tube
    
    Tube()
    {
-       tube1 = new Square(50,450,200,0,"green");
-       tube2 = new Square(50,450,50,0,"green");
-       tube3 = new Square(50,450,300,-60,"green");
-       xPosition = 0;
+       xPosition = 1920;
        yPosition = 0;
-       
+       tube1 = new Square(50,450,xPosition,yPosition,"green");
+       tube2 = new Square(50,450,xPosition,yPosition,"green");
+       tube3 = new Square(50,450,xPosition,yPosition,"green");
        
     
    }
@@ -34,6 +33,15 @@ public class Tube
    
    public void bewegeNachLinks()
    {
+       xPosition = xPosition - 5;
+       tube1.moveHorizontal (-5);
+       tube2.moveHorizontal (-5);
+       tube3.moveHorizontal (-5);
        
+       if (xPosition <-50)
+       {
+           xPosition = 1870;
+           }
+       }
    }
-}
+

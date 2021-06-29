@@ -1,4 +1,9 @@
+import java.awt.BorderLayout;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
+import javax.swing.JFrame;
+import javax.swing.JTextField;
 /**
  * Beschreiben Sie hier die Klasse Spiel.
  * 
@@ -11,6 +16,9 @@ public class Spiel
     Tube tube1;
     Tube tube2;
     Tube tube3;
+    Boolean gameover;
+    KeyEventClass tastatur;
+    int beschleunigung;
     /**
      * Konstruktor für Objekte der Klasse Spiel
      */
@@ -24,9 +32,27 @@ public class Spiel
         tube2.draw();
         tube3 = new Tube();
         tube3.draw();
-        
-        bird.move(50);
-        
+        tastatur = new KeyEventClass();
+        bird.move(50); 
+        beschleunigung = 1;
     }    
-}
+    
+    public void starteSpiel()
+    {
+        while (gameover == false)
+        {
+            if (tastatur.e.getKeyEvent == Zeichen.VK_SPACE);
+            {
+                bird.move(-20);
+                tube1.bewegeNachLinks();
+                tube2.bewegeNachLinks();
+                tube3.bewegeNachLinks();
+            }
+            }
+            }
+            }
+         
+
+
+    
 
