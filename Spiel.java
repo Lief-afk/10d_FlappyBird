@@ -10,7 +10,7 @@ import javax.swing.JTextField;
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class Spiel extends JFrame implements KeyListener 
+public class Spiel implements KeyListener 
 {
     Bird bird;
     Tube tube1;
@@ -18,6 +18,7 @@ public class Spiel extends JFrame implements KeyListener
     Tube tube3;
     Boolean gameover;
     int beschleunigung;
+    JFrame f;
     /**
      * Konstruktor für Objekte der Klasse Spiel
      */
@@ -28,19 +29,18 @@ public class Spiel extends JFrame implements KeyListener
         tube1 = new Tube();
         tube1.draw();
         tube2 = new Tube();
+        
         tube2.draw();
         tube3 = new Tube();
         tube3.draw();
         bird.move(50); 
         beschleunigung = 1;
-        this.setLayout(new BorderLayout());
-        JTextField field = new JTextField();
-        field.addKeyListener(this);
-        this.add(field, BorderLayout.CENTER);
-        this.pack();
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setLocationRelativeTo(null);
-        this.setVisible(true);
+        f = new JFrame();
+        f.setVisible(true);
+        f.setSize(0,0);
+        f.addKeyListener(this);
+        gameover = false;
+        
     }    
     
     public void keyTyped(KeyEvent e) 
@@ -54,7 +54,6 @@ public class Spiel extends JFrame implements KeyListener
             case KeyEvent.VK_SPACE:
             bird.move(-20);
             break;
-            
         }
     }
 
